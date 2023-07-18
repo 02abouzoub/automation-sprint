@@ -23,8 +23,7 @@ public class AhmedSalesPage {
     @FindBy(xpath = "//button[@accesskey='s']")
     public WebElement saveBtn;
 
-    @FindBy(xpath = "//button[@accesskey='a']")
-    public WebElement editBtn;
+
 
     @FindBy(xpath = "//h1")
     public WebElement customerName;

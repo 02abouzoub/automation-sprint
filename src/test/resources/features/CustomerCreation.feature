@@ -26,7 +26,6 @@ Feature: Customer Creation from Sales module
     Examples: These are the users we are going to login with
     #Comman+option+L
       | userName                 | passWord     | customerName    |
-      | salesmanager6@info.com   | salesmanager | jane doe        |
       | salesmanager6@info.com   | salesmanager | john douey      |
       | salesmanager18@info.com  | salesmanager | jonah dowey     |
       | salesmanager39@info.com` | salesmanager | caleb lhuwawei  |
