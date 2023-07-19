@@ -1,8 +1,8 @@
 package com.B29_GR17_Project.step_definitions;
 
-import com.B29_GR17_Project.pages.LoginPage;
-import com.B29_GR17_Project.utilities.ConfigurationReader;
-import io.cucumber.java.en.Given;
+import com.B29_GR17_Project.utilities.Driver;
+import org.openqa.selenium.WebElement;
+
 public class LoginStepDefs {
 
 
