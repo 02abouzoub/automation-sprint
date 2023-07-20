@@ -1,7 +1,7 @@
 package com.B29_GR17_Project.step_definitions;
 
 import com.B29_GR17_Project.pages.US14_DashboardPageYB;
-import com.B29_GR17_Project.pages.LoginPageYB;
+import com.B29_GR17_Project.pages.US14_LoginPageYB;
 import com.B29_GR17_Project.utilities.ConfigurationReader;
 import com.B29_GR17_Project.utilities.Driver;
 import io.cucumber.java.en.And;
@@ -14,7 +14,7 @@ import java.util.List;
 
 public class US14_YoussefStepDefs {
 
-    LoginPageYB loginPageYB = new LoginPageYB();
+    US14_LoginPageYB US14LoginPageYB = new US14_LoginPageYB();
     US14_DashboardPageYB US14DashboardPageYB = new US14_DashboardPageYB();
     @Given("user is on the login page")
     public void userIsOnTheLoginPage() {
@@ -23,12 +23,12 @@ public class US14_YoussefStepDefs {
 
     @When("user enters {string},{string}")
     public void userEnters(String arg0, String arg1) {
-        loginPageYB.login(arg0,arg1);
+        US14LoginPageYB.login(arg0,arg1);
     }
 
     @And("user clicks on the login button")
     public void userClicksOnTheLoginButton() {
-        loginPageYB.loginButton.click();
+        US14LoginPageYB.loginButton.click();
     }
 
 
