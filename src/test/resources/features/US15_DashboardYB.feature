@@ -2,6 +2,7 @@
 Feature: Accessing different modules
   US:As an Event manager, I should be able to access the main modules
 
+
 @B29G17-245
   Scenario Outline: Login as event manager
     Given user is on the login page
