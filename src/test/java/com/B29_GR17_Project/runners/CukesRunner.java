@@ -8,12 +8,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 "html:target/cucumber-reports.html",
+                "json:target/cucumber.json",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
         glue = "com/B29_GR17_Project/step_definitions",
-        dryRun = true,
+        dryRun = false,
         tags = "",
         publish = true //generating a report with public link
 )
