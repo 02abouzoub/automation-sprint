@@ -1,6 +1,6 @@
 package com.B29_GR17_Project.step_definitions;
 
-import com.B29_GR17_Project.pages.LoginPage1YB;
+import com.B29_GR17_Project.pages.US15_Loginpage1YB;
 import com.B29_GR17_Project.pages.US15_DashboardPageYB;
 import com.B29_GR17_Project.utilities.ConfigurationReader;
 import com.B29_GR17_Project.utilities.Driver;
@@ -13,7 +13,7 @@ import org.junit.Assert;
 import java.util.List;
 
 public class US15_DashboardStepDefs {
-    LoginPage1YB login = new LoginPage1YB();
+    US15_Loginpage1YB login = new US15_Loginpage1YB();
     @Given("user is on the login page")
     public void userIsOnTheLoginPage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));

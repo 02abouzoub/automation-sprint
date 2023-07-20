@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage1YB {
+public class US15_Loginpage1YB {
 
-    public LoginPage1YB() {
+    public US15_Loginpage1YB() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
