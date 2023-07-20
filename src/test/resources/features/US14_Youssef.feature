@@ -1,9 +1,9 @@
 
-
+@B29G17-247
 Feature: Accessing different modules
   US:As an Inventory manager, I should be able to access the main modules
 
-  @B29G17-247
+@B29G17-244
   Scenario Outline: Login as inventory manager
     Given user is on the login page
     When user enters "<email>","<password>"
