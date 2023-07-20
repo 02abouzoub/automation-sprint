@@ -1,4 +1,4 @@
-@B29G17-266
+@B29G17-266-Regression
 Feature: Default
 
 	#{color:#de350b}*_US05:_*{color}
