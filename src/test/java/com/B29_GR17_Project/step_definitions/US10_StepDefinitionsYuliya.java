@@ -1,6 +1,7 @@
 package com.B29_GR17_Project.step_definitions;
 
 import com.B29_GR17_Project.pages.LoginPage;
+import com.B29_GR17_Project.pages.US10_DocumentationPage_Yuliya;
 import com.B29_GR17_Project.utilities.BrowserUtils;
 import com.B29_GR17_Project.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class US10_StepDefinitionsYuliya {
 
-    LoginPage documentationPage = new LoginPage();
+    US10_DocumentationPage_Yuliya documentationPage = new US10_DocumentationPage_Yuliya();
 
     @Given("user logged in with {string} and {string}")
     public void user_logged_in_with_and(String username, String password) {
