@@ -15,6 +15,7 @@ public class US10_StepDefinitionsYuliya {
 
     US10_DocumentationPage_Yuliya documentationPage = new US10_DocumentationPage_Yuliya();
 
+
     @Given("user logged in with {string} and {string}")
     public void user_logged_in_with_and(String username, String password) {
         documentationPage.login(username,password);
