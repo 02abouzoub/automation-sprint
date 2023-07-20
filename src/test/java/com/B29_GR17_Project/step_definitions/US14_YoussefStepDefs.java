@@ -1,6 +1,6 @@
 package com.B29_GR17_Project.step_definitions;
 
-import com.B29_GR17_Project.pages.DashboardPageYB;
+import com.B29_GR17_Project.pages.US14_DashboardPageYB;
 import com.B29_GR17_Project.pages.LoginPageYB;
 import com.B29_GR17_Project.utilities.ConfigurationReader;
 import com.B29_GR17_Project.utilities.Driver;
@@ -9,14 +9,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
 public class US14_YoussefStepDefs {
 
     LoginPageYB loginPageYB = new LoginPageYB();
-    DashboardPageYB dashboardPageYB = new DashboardPageYB();
+    US14_DashboardPageYB US14DashboardPageYB = new US14_DashboardPageYB();
     @Given("user is on the login page")
     public void userIsOnTheLoginPage() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
@@ -36,8 +35,8 @@ public class US14_YoussefStepDefs {
     @Then("user should see all  modules")
     public void userShouldSeeAllModules(List<String> expected) {
 
-        for (int i = 0 ; i < dashboardPageYB.mainModules.size(); i++ ) {
-            Assert.assertEquals(expected.get(i),(dashboardPageYB.mainModules.get(i).getText()));
+        for (int i = 0; i < US14DashboardPageYB.mainModules.size(); i++ ) {
+            Assert.assertEquals(expected.get(i),(US14DashboardPageYB.mainModules.get(i).getText()));
 
         }
 

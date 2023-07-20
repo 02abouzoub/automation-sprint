@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class DashboardPageYB {
+public class US14_DashboardPageYB {
 
-    public DashboardPageYB(){
+    public US14_DashboardPageYB(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
