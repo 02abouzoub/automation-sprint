@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/B29_GR17_Project/step_definitions",
-        dryRun = true,
+        dryRun = false,
         tags = "@edit",
         publish = true //generating a report with public link
 )

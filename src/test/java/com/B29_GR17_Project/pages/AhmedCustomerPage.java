@@ -13,67 +13,56 @@ public class AhmedCustomerPage {
     }
 
 
-    @FindBy(partialLinkText = "id=3392&unique=")
+    @FindBy(xpath = "//img[@modifiers='{}']")
     public WebElement customer1;
-
-    @FindBy(partialLinkText = "id=4202&unique=")
-    public WebElement customer2;
-
-    @FindBy(partialLinkText = "id=3146&unique=")
-    public WebElement customer3;
-
-    @FindBy(partialLinkText = "id=3378&unique=")
-    public WebElement customer4;
-
-    @FindBy(partialLinkText = "id=3119&unique=")
-    public WebElement customer5;
-
-    @FindBy(partialLinkText = "id=9&unique=")
-    public WebElement customer6;
 
     @FindBy(xpath = "//button[@accesskey='a']")
     public WebElement editBtn;
 
-    @FindBy(id = "o_field_input_1911")
+    @FindBy(xpath = "//input[@placeholder='Name']")
     public WebElement nameBox;
 
-    @FindBy(id = "o_field_input_1915")
+    @FindBy(xpath = "//input[@placeholder='Street...']")
     public WebElement addressBox;
 
-    @FindBy(id = "o_field_input_1916")
+    @FindBy(xpath = "//input[@placeholder='Street 2...']")
     public WebElement addressBoxContinue;
 
-    @FindBy(id = "o_field_input_1917")
+    @FindBy(xpath = "//input[@placeholder='City']")
     public WebElement cityBox;
 
-    @FindBy(id = "o_field_input_1918")
+    @FindBy(xpath = "//input[@placeholder='S\uFEFFt\uFEFFa\uFEFFt\uFEFFe']")
     public WebElement stateDropdown;
 
-    @FindBy(id = "o_field_input_1919")
+    @FindBy(xpath = "//ul[@style='display: none; top: 427.969px; left: 468.281px; width: 164px;']/li[1]")
+    public WebElement stateSelect;
+
+
+    @FindBy(xpath = "//input[@placeholder='ZIP']")
     public WebElement zipCode;
 
-    @FindBy(id = "o_field_input_1920")
+    @FindBy(xpath = "//input[@placeholder='C\uFEFFo\uFEFFu\uFEFFn\uFEFFt\uFEFFr\uFEFFy']")
     public WebElement countryDropdown;
 
-    @FindBy(id = "o_field_input_1921")
+    @FindBy(xpath = "//input[@placeholder='e.g. BE0477472701']")
     public WebElement taxIdNumber;
 
-    @FindBy(id = "o_field_input_1922")
+    @FindBy(xpath = "//input[@placeholder='T\uFEFFa\uFEFFg\uFEFFs\uFEFF.\uFEFF.\uFEFF.']")
     public WebElement tagsDropdown;
 
-    @FindBy(id = "o_field_input_1924")
+    @FindBy(xpath = "//input[@name='phone']")
     public WebElement phoneNumber;
 
-    @FindBy(id = "o_field_input_1925")
+    @FindBy(xpath = "//input[@name='mobile']")
     public WebElement mobileNumber;
 
-    @FindBy(id = "o_field_input_1927")
+    @FindBy(xpath = "//input[@name='email']")
     public WebElement customerEmail;
 
-    @FindBy(id = "o_field_input_1928")
+    @FindBy(xpath = "//input[@name='website']")
     public WebElement customerWebsite;
 
-    @FindBy(id = "o_field_input_1930")
+    @FindBy(xpath = "//select[@name='lang']")
     public WebElement languageDropdown;
 
     @FindBy(xpath = "//button[@accesskey='s']")

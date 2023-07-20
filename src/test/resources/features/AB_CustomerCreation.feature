@@ -27,16 +27,13 @@ Feature: Customer Creation from Sales module
     #Comman+option+L
       | userName                 | passWord     | customerName    |
       | salesmanager6@info.com   | salesmanager | john douey      |
-      | salesmanager18@info.com  | salesmanager | jonah dowey     |
-      | salesmanager39@info.com` | salesmanager | caleb lhuwawei  |
+      | salesmanager18@info.com  | salesmanager | hamid eistein   |
+      | salesmanager39@info.com  | salesmanager | caleb linkhorn  |
       | salesmanager57@info.com  | salesmanager | slim shady      |
       | salesmanager74@info.com  | salesmanager | brad pitt       |
       | salesmanager92@info.com  | salesmanager | warren buffeett |
       | salesmanager105@info.com | salesmanager | patel saravisan |
       | salesmanager106@info.com | salesmanager | ming wu         |
-      | salesmanager5@info.com   | salesmanager | yu mi           |
-      | salesmanager107@info.com | salesmanager | hamoud hamada   |
-      | salesmanager121@info.com | salesmanager | hamid hamdoune  |
 
 
 
