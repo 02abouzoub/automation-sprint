@@ -1,4 +1,3 @@
-
 @edit
 Feature: Edit Product Information in POS
 
@@ -27,12 +26,12 @@ Feature: Edit Product Information in POS
 
     Examples:
       | userName               | passWord   |
-      | posmanager5@info.com   | posmanager |
-      | posmanager17@info.com  | posmanager |
-      | posmanager38@info.com  | posmanager |
-      | posmanager51@info.com  | posmanager |
-      | posmanager76@info.com  | posmanager |
-      | posmanager101@info.com | posmanager |
-      | posmanager105@info.com | posmanager |
+      | posmanager9@info.com   | posmanager |
+      | posmanager25@info.com  | posmanager |
+      | posmanager46@info.com  | posmanager |
+      | posmanager67@info.com  | posmanager |
+      | posmanager88@info.com  | posmanager |
+      | posmanager99@info.com  | posmanager |
+      | posmanager103@info.com | posmanager |
 
 
