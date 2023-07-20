@@ -17,4 +17,10 @@ public class AhmedHomePage {
     @FindBy(xpath = "//a[@href='/web#menu_id=445&action=']")
     public WebElement salesPageBtn;
 
+    @FindBy(xpath = "//a[@href='/web#menu_id=484&action=']")
+    public WebElement posBtn;
+
+    @FindBy(xpath = "//a[@href='/web#menu_id=491&action=669']")
+    public WebElement productsBtn;
+
 }
