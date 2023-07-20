@@ -31,7 +31,7 @@ public class US10_DocumentationPage_Yuliya {
     @FindBy(xpath = "//h1[@class='text-white']")
     public WebElement actualMessage;
 
-    @FindBy(xpath = "/*[@id='o_content']//h2//a")
+    @FindBy(xpath = "//*[@id='o_content']//h2//a")
     public List<WebElement> allTopics;
 
 

@@ -1,8 +1,10 @@
+@B29G17-260
 Feature: Documentation Page
   As a user
   I want to access the documentation page
   So that I can learn about the product's features and functionality
 
+  @B29G17-257
   Scenario Outline: Accessing the documentation page
     Given user logged in with "<username>" and "<password>"
     When user accesses the documentation page
