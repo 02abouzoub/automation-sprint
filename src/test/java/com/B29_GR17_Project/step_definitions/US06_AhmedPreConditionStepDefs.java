@@ -9,8 +9,8 @@ import io.cucumber.java.en.When;
 
 public class US06_AhmedPreConditionStepDefs {
 
-    AhmedLoginPage loginPage = new AhmedLoginPage();
-    AhmedHomePage homePage = new AhmedHomePage();
+      AhmedLoginPage loginPage = new AhmedLoginPage();
+      AhmedHomePage homePage = new AhmedHomePage();
 
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {

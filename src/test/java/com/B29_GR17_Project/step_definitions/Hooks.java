@@ -56,7 +56,7 @@ public class Hooks {
         System.out.println("-----> @BeforeSTEP : Running before each step!");
     }
 
-    //@AfterStep
+     //@AfterStep
     public void teardownStep(){
         System.out.println("-----> @AfterSTEP : Running after each step!");
     }

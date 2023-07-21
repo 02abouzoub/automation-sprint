@@ -34,7 +34,7 @@ public class US06_AhmedProductEditDefSteps {
        // Select ptypeDropdown = new Select(productsPage.productTypeDropdown);
        // ptypeDropdown.selectByIndex(2);
 
-      //  Select categDropdown = new Select(productsPage.categoryDropdown);
+       //  Select categDropdown = new Select(productsPage.categoryDropdown);
        // categDropdown.selectByIndex(3);
 
         productsPage.internalRefBox.sendKeys(Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,Keys.BACK_SPACE,"123487kk");
