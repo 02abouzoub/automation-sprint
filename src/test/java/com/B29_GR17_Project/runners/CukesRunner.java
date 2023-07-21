@@ -11,7 +11,6 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
                 "json:target/cucumber.json"
-
         },
         features = "src/test/resources/features",
         glue = "com/B29_GR17_Project/step_definitions",
