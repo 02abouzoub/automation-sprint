@@ -11,8 +11,8 @@ Feature: Edit Product Information in POS
   the boxes entered information can be editable again.
 
   Scenario Outline:
-    Given user is on the login page
-    When user enters valid "<userName>"
+     Given user is on the login page
+     When user enters valid "<userName>"
     And user enters a valid "<passWord>"
     And user clicks log in button
     And user clicks point of sale

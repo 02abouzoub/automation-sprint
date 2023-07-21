@@ -12,8 +12,8 @@ Feature: Product Creation as POS manager
 
   Scenario Outline:
     Given user is on the login page
-    When user enters valid "<userName>"
-    And user enters a valid "<passWord>"
+     When user enters valid "<userName>"
+     And user enters a valid "<passWord>"
     And user clicks log in button
     And user clicks point of sale
     And user clicks product
