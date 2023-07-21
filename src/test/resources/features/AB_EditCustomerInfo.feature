@@ -4,7 +4,7 @@ Feature: Editable customer information
   US05 As Sales Manager, I should be able to create a new customer from "Sales" module
 
   AC02:
-  clicking any customer and then clicking the edit button, all the boxes entered information
+   clicking any customer and then clicking the edit button, all the boxes entered information
   should be editable again.
 
   @edit

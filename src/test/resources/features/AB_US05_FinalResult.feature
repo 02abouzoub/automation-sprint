@@ -11,7 +11,7 @@ Feature: Default
 	#The user can create a new customer by filling only the Name input box and after clicking the save button, the information of the customer which the user entered should be displayed.
 	@B29G17-217
 	Scenario Outline: US05AC01TC01- As a user, i should be able to create a customer with only filling out their name and hitting save button
-		Given user is on the login page
+		 Given user is on the login page
 		    When user enters valid "<userName>"
 		    And user enters a valid "<passWord>"
 		    And user clicks log in button

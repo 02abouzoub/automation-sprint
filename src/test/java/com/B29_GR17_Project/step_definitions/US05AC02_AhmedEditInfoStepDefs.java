@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class US05AC02_AhmedEditInfoStepDefs {
 
-    AhmedSalesPage salesPage = new AhmedSalesPage();
+     AhmedSalesPage salesPage = new AhmedSalesPage();
     AhmedHomePage homePage = new AhmedHomePage();
     AhmedLoginPage loginPage = new AhmedLoginPage();
     AhmedCustomerPage customerPage = new AhmedCustomerPage();

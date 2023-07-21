@@ -5,7 +5,7 @@ Feature: Customer Creation from Sales module
   US05- As Sales Manager, I should be able to create a new customer from "Sales" module
 
   AC01:
-  The user can create a new customer by filling only the Name input box and after clicking
+   The user can create a new customer by filling only the Name input box and after clicking
   the save button, the information of the customer which the user entered should be displayed.
 
   @scenarioOutline
