@@ -1,6 +1,7 @@
 package com.B29_GR17_Project.step_definitions;
 
-import com.B29_GR17_Project.pages.AhmedProductsPage;
+import com.B29_GR17_Project.pages.AhmedPoductPage;
+
 import com.B29_GR17_Project.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.eo.Se;
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class US06_AhmedProductEditDefSteps {
 
-    AhmedProductsPage productsPage = new AhmedProductsPage();
+    AhmedPoductPage productsPage = new AhmedPoductPage();
 
     @Then("user chooses a product")
     public void user_chooses_a_product() {

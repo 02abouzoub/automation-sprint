@@ -2,6 +2,7 @@ package com.B29_GR17_Project.step_definitions;
 
 import com.B29_GR17_Project.pages.AhmedHomePage;
 import com.B29_GR17_Project.pages.AhmedLoginPage;
+import com.B29_GR17_Project.pages.AhmedPoductPage;
 import com.B29_GR17_Project.utilities.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,6 +12,7 @@ public class US06_AhmedPreConditionStepDefs {
 
       AhmedLoginPage loginPage = new AhmedLoginPage();
       AhmedHomePage homePage = new AhmedHomePage();
+
 
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
