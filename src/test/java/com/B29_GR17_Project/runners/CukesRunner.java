@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/B29_GR17_Project/step_definitions",
-        dryRun = true,
-        tags = "",
+        dryRun = false,
+        tags = "@B29G17-266-Regression",
         publish = true //generating a report with public link
 )
 public class CukesRunner {}
