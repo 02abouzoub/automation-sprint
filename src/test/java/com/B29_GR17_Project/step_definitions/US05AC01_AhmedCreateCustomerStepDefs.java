@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class US05AC01_AhmedCreateCustomerStepDefs {
-     AhmedLoginPage loginPage = new AhmedLoginPage();
+    AhmedLoginPage loginPage = new AhmedLoginPage();
     AhmedHomePage homePage = new AhmedHomePage();
 
     AhmedSalesPage salesPage = new AhmedSalesPage();
