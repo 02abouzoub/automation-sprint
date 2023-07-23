@@ -33,7 +33,7 @@ Feature: As sales and expense manager, I want to Login with valid credentials an
     Then user sees account holder name is "<email>"
     @expenseManager
     Examples:
-      | email                  | password        |
+      | email                      | password        |
       | expensesmanager15@info.com | expensesmanager |
       | expensesmanager36@info.com | expensesmanager |
       | expensesmanager90@info.com | expensesmanager |
@@ -41,7 +41,7 @@ Feature: As sales and expense manager, I want to Login with valid credentials an
       | expensesmanager74@info.com | expensesmanager |
     @salesManager
     Examples:
-      | email                | password     |
+      | email                    | password     |
       | salesmanager6@info.com   | salesmanager |
       | salesmanager102@info.com | salesmanager |
       | salesmanager77@info.com  | salesmanager |
@@ -49,11 +49,11 @@ Feature: As sales and expense manager, I want to Login with valid credentials an
 
   @B29G17-221
   Scenario Outline: User use invalid login credentials
-    When the user login with the "<Invalid username>","<Invalid password>"
+    When the user login with the "<Invalid email>","<Invalid password>"
     Then "Wrong login/password" error message
 
     Examples:
-      | Invalid username    | Invalid password |
+      | Invalid email       | Invalid password |
       | salesman@info.com   | salesmanager     |
       | sales@info.com      | Abc              |
       | s.manager@@info.com | Abc123           |
@@ -63,10 +63,10 @@ Feature: As sales and expense manager, I want to Login with valid credentials an
 
   @B29G17-222
   Scenario Outline: User gets the "Please fill out this field." message for at least one blank field.
-    When the user login with either "<Blank username>" or "<Blank password>"
-    Then user sees "Please fill out this field." message
+    When the user login with either "<Blank email>" or "<Blank password>"
+    Then user sees "Please fill in this field." message
     Examples:
-      | Blank username          | Blank password |
+      | Blank email             | Blank password |
       |                         | salesmanager   |
       |                         | manager        |
       | s.manager@info.com      |                |

@@ -13,7 +13,7 @@ public class US02_LoginPage_IA {
     }
 
     @FindBy(xpath = "//input[@id='login']")
-    public WebElement userNameInputField;
+    public WebElement emailInputField;
 
     @FindBy(xpath = "//input[@id='password']")
     public WebElement passwordInputField;
@@ -35,12 +35,12 @@ public class US02_LoginPage_IA {
     public WebElement hidden3;
 
     public void loginAndClick(String username, String password) {
-        userNameInputField.sendKeys(username);
+        emailInputField.sendKeys(username);
         passwordInputField.sendKeys(password);
         loginBtn.click();
     }
     public void loginAndEnter(String username, String password) {
-        userNameInputField.sendKeys(username);
+        emailInputField.sendKeys(username);
         passwordInputField.sendKeys(password);
         loginBtn.sendKeys(Keys.ENTER);
     }
