@@ -8,43 +8,41 @@ Feature: As sales and expense manager, I want to Login with valid credentials an
   @B29G17-219
   Scenario Outline: user can log in with valid credentials and click login
     When the user login with "<email>","<password>"
-    Then user sees account holder name is "<email>"
+    Then user sees account holder name is "<name>"
     @expenseManager
     Examples:
-      | email                       | password        |
-      | expensesmanager10@info.com  | expensesmanager |
-      | expensesmanager22@info.com  | expensesmanager |
-      | expensesmanager52@info.com  | expensesmanager |
-      | expensesmanager99@info.com  | expensesmanager |
-      | expensesmanager100@info.com | expensesmanager |
-
-
+      | email                       | password        | name               |
+      | expensesmanager10@info.com  | expensesmanager | ExpensesManager10  |
+      | expensesmanager22@info.com  | expensesmanager | ExpensesManager22  |
+      | expensesmanager52@info.com  | expensesmanager | ExpensesManager52  |
+      | expensesmanager99@info.com  | expensesmanager | ExpensesManager99  |
+      | expensesmanager100@info.com | expensesmanager | ExpensesManager100 |
 
     @salesManager
     Examples:
-      | email                    | password     |
-      | salesmanager6@info.com   | salesmanager |
-      | salesmanager44@info.com  | salesmanager |
-      | salesmanager105@info.com | salesmanager |
+      | email                    | password     | name            |
+      | salesmanager6@info.com   | salesmanager | SalesManager6   |
+      | salesmanager44@info.com  | salesmanager | SalesManager44  |
+      | salesmanager105@info.com | salesmanager | SalesManager105 |
 
   @B29G17-220
   Scenario Outline: user can log in with valid credentials plus EnterKey
     When the user login with "<email>","<password>" and hit the Enter key
-    Then user sees account holder name is "<email>"
+    Then user sees account holder name is "<name>"
     @expenseManager
     Examples:
-      | email                      | password        |
-      | expensesmanager15@info.com | expensesmanager |
-      | expensesmanager36@info.com | expensesmanager |
-      | expensesmanager90@info.com | expensesmanager |
-      | expensesmanager99@info.com | expensesmanager |
-      | expensesmanager74@info.com | expensesmanager |
+      | email                      | password        | name              |
+      | expensesmanager15@info.com | expensesmanager | ExpensesManager15 |
+      | expensesmanager36@info.com | expensesmanager | ExpensesManager36 |
+      | expensesmanager90@info.com | expensesmanager | ExpensesManager90 |
+      | expensesmanager99@info.com | expensesmanager | ExpensesManager99 |
+      | expensesmanager74@info.com | expensesmanager | ExpensesManager74 |
     @salesManager
     Examples:
-      | email                    | password     |
-      | salesmanager6@info.com   | salesmanager |
-      | salesmanager102@info.com | salesmanager |
-      | salesmanager77@info.com  | salesmanager |
+      | email                    | password     | name            |
+      | salesmanager8@info.com   | salesmanager | SalesManager8   |
+      | salesmanager102@info.com | salesmanager | SalesManager102 |
+      | salesmanager77@info.com  | salesmanager | SalesManager77  |
 
 
   @B29G17-221

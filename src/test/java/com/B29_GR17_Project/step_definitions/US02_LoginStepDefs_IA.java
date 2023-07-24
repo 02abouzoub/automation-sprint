@@ -26,9 +26,9 @@ public class US02_LoginStepDefs_IA {
 
     @Then("user sees account holder name is {string}")
     public void userSeesAccountHolderNameIs(String expectedUserName) {
-        String actualUsername = loginPage.userName.getText().toLowerCase();
+        String actualUsername = loginPage.userName.getText();
 
-        Assert.assertTrue(expectedUserName.contains(actualUsername));
+        Assert.assertEquals(expectedUserName,actualUsername);
 
     }
 
