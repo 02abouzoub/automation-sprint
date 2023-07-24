@@ -3,6 +3,7 @@ package com.B29_GR17_Project.step_definitions;
 import com.B29_GR17_Project.pages.US02_LoginPage_IA;
 import com.B29_GR17_Project.utilities.ConfigurationReader;
 import com.B29_GR17_Project.utilities.Driver;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -51,30 +52,35 @@ public class US02_LoginStepDefs_IA {
     }
 
 
-    @When("the user login with either {string} or {string}")
-    public void theUserLoginWithEitherOr(String blankUserName, String blankPassword) {
-        loginPage.loginAndClick(blankUserName, blankPassword);
+    @When("user login with {string} and leaves password field blank")
+    public void userLoginWithAndBlankPasswordField(String email) {
+        loginPage.emailInputField.sendKeys(email);
+        loginPage.loginBtn.click();
+    }
+
+    @Then("user sees {string} message from password field")
+    public void userSeesMessageFromPasswordField(String expectedErrorMsg) {
+
+        String ActualMsg = loginPage.passwordInputField.getAttribute("validationMessage");
+
+        Assert.assertEquals (expectedErrorMsg,ActualMsg);
+    }
+
+    @When("user login with {string} and leave email field blank")
+    public void userLoginWithAndLeaveEmailFieldBlank(String password) {
+        loginPage.passwordInputField.sendKeys(password);
+
+        loginPage.loginBtn.click();
     }
 
 
-    @Then("user sees {string} message")
-    public void userSeesMessage(String expectedErrorMsg) {
+    @Then("user sees {string} message from email field")
+    public void userSeesMessageFromEmailField(String expectedErrorMsg) {
 
-        String emailInputFieldActualMsg = loginPage.emailInputField.getAttribute("validationMessage");
-        //String passwordInputFieldActualMsg = loginPage.passwordInputField.getAttribute("validationMessage");
+        String actualErrorMsg = loginPage.emailInputField.getAttribute("validationMessage");
 
-        System.out.println("emailInputFieldActualMsg = " + emailInputFieldActualMsg);
-        //System.out.println("passwordInputFieldActualMsg = " + passwordInputFieldActualMsg);
-
-       /*  if ((passwordInputFieldActualMsg.equals(expectedErrorMsg) || emailInputFieldActualMsg.equals(expectedErrorMsg))) {
-          Assert.assertTrue(true);
-          }
-
-       */
-        //Assert.assertEquals (expectedErrorMsg,passwordInputFieldActualMsg);
-        Assert.assertEquals (expectedErrorMsg,emailInputFieldActualMsg);
-
-
+        Assert.assertEquals (expectedErrorMsg,actualErrorMsg);
 
     }
+
 }

@@ -60,15 +60,24 @@ Feature: As sales and expense manager, I want to Login with valid credentials an
       | @info.com           | Ab67             |
 
   @B29G17-222
-  Scenario Outline: User gets the "Please fill out this field." message for at least one blank field.
-    When the user login with either "<Blank email>" or "<Blank password>"
-    Then user sees "Please fill in this field." message
+  Scenario Outline: User gets the "Please fill out this field." message password field.
+    When user login with "<email>" and leaves password field blank
+    Then user sees "Please fill in this field." message from password field
     Examples:
-      | Blank email             | Blank password |
-      |                         | salesmanager   |
-      |                         | manager        |
-      | s.manager@info.com      |                |
-      | salesmanager37@info.com |                |
-      |                         |                |
-      |                         |                |
+      | email                       |
+      | expensemanager@info.com     |
+      | salesmanager37@info.com     |
+      | inventorymanager37@info.com |
+      | posmanager37@info.com       |
 
+
+  @B29G17-277
+  Scenario Outline: User gets the "Please fill out this field." message email field.
+    When user login with "<password>" and leave email field blank
+    Then user sees "Please fill in this field." message from email field
+    Examples:
+      | password         |
+      | salesmanager     |
+      | expensemanager   |
+      | expensemanager   |
+      | inventorymanager |
