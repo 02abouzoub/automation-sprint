@@ -61,17 +61,18 @@ public class US02_LoginStepDefs_IA {
     public void userSeesMessage(String expectedErrorMsg) {
 
         String emailInputFieldActualMsg = loginPage.emailInputField.getAttribute("validationMessage");
-        String passwordInputFieldActualMsg = loginPage.passwordInputField.getAttribute("validationMessage");
+        //String passwordInputFieldActualMsg = loginPage.passwordInputField.getAttribute("validationMessage");
 
         System.out.println("emailInputFieldActualMsg = " + emailInputFieldActualMsg);
-        System.out.println("passwordInputFieldActualMsg = " + passwordInputFieldActualMsg);
+        //System.out.println("passwordInputFieldActualMsg = " + passwordInputFieldActualMsg);
 
        /*  if ((passwordInputFieldActualMsg.equals(expectedErrorMsg) || emailInputFieldActualMsg.equals(expectedErrorMsg))) {
           Assert.assertTrue(true);
           }
 
        */
-        Assert.assertTrue ((expectedErrorMsg.equals(passwordInputFieldActualMsg) || expectedErrorMsg.equals(emailInputFieldActualMsg))) ;
+        //Assert.assertEquals (expectedErrorMsg,passwordInputFieldActualMsg);
+        Assert.assertEquals (expectedErrorMsg,emailInputFieldActualMsg);
 
 
 
