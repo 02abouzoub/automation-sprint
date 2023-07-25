@@ -1,7 +1,6 @@
 package com.B29_GR17_Project.pages;
 
 import com.B29_GR17_Project.utilities.Driver;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -22,13 +21,6 @@ public class US12_RepairsPage_IA {
     public WebElement loginBtn;
 
 
-
-    @FindBy(xpath = "//li[@class='active']//span")
-    public WebElement repairsPageBtn;
-
-
-
-
     public void loginAndClick(String username, String password) {
         userNameInputField.sendKeys(username);
         passwordInputField.sendKeys(password);
@@ -38,7 +30,7 @@ public class US12_RepairsPage_IA {
     public WebElement topRepairOrdersCheckBox;
 
 
-    @FindBy(xpath = "//input[@type='checkbox']")
+    @FindBy(xpath = "//tr//input[@type='checkbox']")
     public List<WebElement> allRepairOrders;
 
     @FindBy(css = "a[data-menu='535'] span[class='oe_menu_text']")

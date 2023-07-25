@@ -18,20 +18,22 @@ import java.util.List;
 public class US12_RepairsStepDefs {
 
     US12_RepairsPage_IA repairsPage = new US12_RepairsPage_IA();
+
     @Given("user in the login page")
     public void user_in_the_login_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
     }
+
     @When("the user login with valid {string},{string}")
     public void theUserLoginWithValid(String email, String password) {
-        repairsPage.loginAndClick(email,password);
+        repairsPage.loginAndClick(email, password);
     }
 
     @And("user clicks on the repair button in the dashboard")
     public void userClicksOnTheRepairButtonInTheDashboard() {
-        WebDriverWait wait= new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
-        wait.until(ExpectedConditions.elementToBeClickable(repairsPage.repairsPageButton) );
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
+        wait.until(ExpectedConditions.elementToBeClickable(repairsPage.repairsPageButton));
 
 
         repairsPage.repairsPageButton.click();
@@ -39,11 +41,10 @@ public class US12_RepairsStepDefs {
     }
 
 
-
     @And("user click on the first checkbox")
     public void userClickOnTheFirstCheckbox() {
-        WebDriverWait wait= new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
-        wait.until(ExpectedConditions.elementToBeClickable(repairsPage.topRepairOrdersCheckBox) );
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(3));
+        wait.until(ExpectedConditions.elementToBeClickable(repairsPage.topRepairOrdersCheckBox));
 
         repairsPage.topRepairOrdersCheckBox.click();
 
@@ -51,13 +52,16 @@ public class US12_RepairsStepDefs {
 
     @Then("user is able to select all repair orders")
     public void userIsAbleToSelectAllRepairOrders() {
+
         List<WebElement> actual= repairsPage.allRepairOrders;
-        boolean assertion= false;
-        for (WebElement each: actual) {
-            assertion= each.isSelected();
+
+        for (WebElement each:actual){
+
+            WebDriverWait wait= new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(3));
+            wait.until(ExpectedConditions.elementToBeSelected(each));
+
+            Assert.assertTrue(each.isSelected());
+            System.out.println("each.isSelected() = " + each.isSelected());
         }
-
-        Assert.assertTrue(assertion);
-
     }
 }
